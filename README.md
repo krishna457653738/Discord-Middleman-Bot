@@ -1,16 +1,16 @@
-# 🤖 Cryptocurrency Middleman Discord Bot
+# Cryptocurrency Middleman Discord Bot
 
 A secure, automated Discord bot for handling cryptocurrency transactions between users with a built-in escrow system. Currently supports **Litecoin (LTC)** with a modular architecture ready for expansion to Bitcoin, Ethereum, and other cryptocurrencies.
 
 ## 🌟 Features
 
-- ** Secure Escrow System**: Automated cryptocurrency holding until deal completion
-- ** Role-Based Transactions**: Clear sending/receiving role assignment
-- ** Dual Confirmation**: Both parties must confirm at each step
-- ** Amount Verification**: USD amount confirmation before processing
-- ** Reset Functionality**: Easy transaction restart if needed
-- ** Timeout Protection**: Automatic timeout handling for user responses
-- ** Rich UI**: Beautiful Discord embeds with intuitive button interactions
+- ** Secure Escrow System**: Automated cryptocurrency holding until deal completion **
+- ** Role-Based Transactions**: Clear sending/receiving role assignment **
+- ** Dual Confirmation**: Both parties must confirm at each step **
+- ** Amount Verification**: USD amount confirmation before processing **
+- ** Reset Functionality**: Easy transaction restart if needed** 
+- ** Timeout Protection**: Automatic timeout handling for user responses**
+- ** Rich UI**: Beautiful Discord embeds with intuitive button interactions**
 
 ## Start
 
