@@ -4,39 +4,15 @@ A secure, automated Discord bot for handling cryptocurrency transactions between
 
 ## 🌟 Features
 
-- **🔐 Secure Escrow System**: Automated cryptocurrency holding until deal completion
-- **👥 Role-Based Transactions**: Clear sending/receiving role assignment
-- **✅ Dual Confirmation**: Both parties must confirm at each step
-- **💰 Amount Verification**: USD amount confirmation before processing
-- **🔄 Reset Functionality**: Easy transaction restart if needed
-- **⏱️ Timeout Protection**: Automatic timeout handling for user responses
-- **🎨 Rich UI**: Beautiful Discord embeds with intuitive button interactions
+- ** Secure Escrow System**: Automated cryptocurrency holding until deal completion
+- ** Role-Based Transactions**: Clear sending/receiving role assignment
+- ** Dual Confirmation**: Both parties must confirm at each step
+- ** Amount Verification**: USD amount confirmation before processing
+- ** Reset Functionality**: Easy transaction restart if needed
+- ** Timeout Protection**: Automatic timeout handling for user responses
+- ** Rich UI**: Beautiful Discord embeds with intuitive button interactions
 
-## 🏗️ Architecture
-
-### **Modular Design**
-The bot uses a clean, modular architecture that separates concerns and enables easy expansion:
-
-```
-📁 Project Structure
-├── 📁 cogs/                    # Discord.py cogs (commands)
-│   └── middleman_service_ltc.py
-├── 📁 views/                   # UI Components
-│   ├── base_view.py           # Common view functionality
-│   ├── base_middleman_service.py # Base service class
-│   └── 📁 ltc/                # LTC-specific views
-│       ├── role_selection_view.py
-│       ├── confirmation_view.py
-│       └── amount_confirmation_view.py
-├── 📁 services/               # Business logic
-│   └── ltc_service.py
-├── 📁 utils/                  # Utility modules
-│   └── embed_factory.py       # Centralized embed creation
-├── 📁 data/                   # Data storage
-└── bot.py                     # Main bot file
-```
-
-## 🚀 Quick Start
+## Start
 
 ### **Prerequisites**
 - Python 3.8+
@@ -66,7 +42,7 @@ The bot uses a clean, modular architecture that separates concerns and enables e
    python bot.py
    ```
 
-## 💼 Usage
+## Usage
 
 ### **Starting a Transaction**
 
@@ -76,24 +52,24 @@ The bot uses a clean, modular architecture that separates concerns and enables e
 
 ### **Transaction Flow**
 
-1. **🎯 Role Selection**
+1. **Role Selection**
    - Users click "Sending" or "Receiving" buttons
    - Both roles must be filled by different users
    - Reset option available if needed
 
-2. **✅ Role Confirmation**
+2. **Role Confirmation**
    - Both users must confirm the role assignments are correct
    - If incorrect, the process restarts with new role selection
 
-3. **💰 Amount Entry**
+3. **Amount Entry**
    - Sending user enters the USD amount
    - Example: `100.59` for $100.59
 
-4. **💵 Amount Confirmation**
+4. **Amount Confirmation**
    - Both users confirm the amount is correct
    - If incorrect, amount entry restarts
 
-5. **🔄 Final Processing**
+5. **Final Processing**
    - Bot transfers control to the LTC service
    - Cryptocurrency escrow process begins
 
@@ -112,11 +88,9 @@ The bot requires the following Discord permissions:
 - Use Slash Commands (if implemented)
 - Manage Messages (for cleanup operations)
 
-## 🛠️ Development
+##Development
 
 ### **Adding New Cryptocurrencies**
-
-Thanks to the modular architecture, adding support for new cryptocurrencies is straightforward:
 
 1. **Create view classes** in `views/{crypto}/`:
    ```python
@@ -163,18 +137,7 @@ The base classes provide hooks for extending functionality:
 - **`BaseMiddlemanService`**: Service orchestration
 - **`EmbedFactory`**: Consistent styling
 
-## 🧪 Testing
-
-```bash
-# Syntax checking
-python -m py_compile cogs/middleman_service_ltc.py
-python -m py_compile views/ltc/role_selection_view.py
-
-# Run with verbose output for debugging
-python bot.py --debug
-```
-
-## 🔒 Security Features
+## Security Features
 
 - **Input Validation**: All user inputs are validated and sanitized
 - **Timeout Handling**: Automatic timeout for user responses (5 minutes)
@@ -182,7 +145,7 @@ python bot.py --debug
 - **Role Verification**: Strict role assignment and confirmation
 - **Secure Cleanup**: Automatic message cleanup after completion
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### **Common Issues**
 
@@ -208,14 +171,14 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 ```
 
-## 📋 Requirements
+## Requirements
 
 See `requirements.txt` for the complete list of dependencies:
 - discord.py
 - asyncio (built-in)
 - Additional dependencies as needed
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/new-crypto`
@@ -229,17 +192,13 @@ See `requirements.txt` for the complete list of dependencies:
 - Add docstrings to all classes and methods
 - Keep functions focused and modular
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## 🔗 Links
 
 - [Discord.py Documentation](https://discordpy.readthedocs.io/)
 - [Discord Developer Portal](https://discord.com/developers/applications)
 - [Python Documentation](https://docs.python.org/3/)
 
-## 🆘 Support
+## Support
 
 If you encounter any issues or need help with setup:
 
