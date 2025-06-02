@@ -4,13 +4,13 @@ A secure, automated Discord bot for handling cryptocurrency transactions between
 
 ## 🌟 Features
 
-- ** Secure Escrow System**: Automated cryptocurrency holding until deal completion **
-- ** Role-Based Transactions**: Clear sending/receiving role assignment **
-- ** Dual Confirmation**: Both parties must confirm at each step **
-- ** Amount Verification**: USD amount confirmation before processing **
-- ** Reset Functionality**: Easy transaction restart if needed** 
-- ** Timeout Protection**: Automatic timeout handling for user responses**
-- ** Rich UI**: Beautiful Discord embeds with intuitive button interactions**
+- **Secure Escrow System**: Automated cryptocurrency holding until deal completion 
+- **Role-Based Transactions**: Clear sending/receiving role assignment 
+- **Dual Confirmation**: Both parties must confirm at each step 
+- **Amount Verification**: USD amount confirmation before processing 
+- **Reset Functionality**: Easy transaction restart if needed
+- **Timeout Protection**: Automatic timeout handling for user responses
+- **Rich UI**: Beautiful Discord embeds with intuitive button interactions
 
 ## Start
 
