@@ -4,8 +4,8 @@ from discord import app_commands
 
 # List of user IDs who are allowed to run the setup command
 AUTHORIZED_USERS = [
-    1079860384950915202,  # Replace with actual user IDs
-    987654321098765432
+    1158569859903402157,  # Replace with actual user IDs
+    1158569859903402157
 ]
 
 class SetupCog(commands.Cog):
